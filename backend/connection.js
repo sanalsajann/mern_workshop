@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const userDBConnection = mongoose.connect('mongodb+srv://sanalsajan916:T7Eu3g1auNHGIaIE@cluster0.ibrjg5n.mongodb.net/employeedb?retryWrites=true&w=majority&appName=Cluster0').then((res) => {
+const userDBConnection = mongoose.connect('Paste your MongoDB connection string here. Between "/" and "?" type the name of the database').then((res) => {
     console.log("UserDB is online");
 }).catch((err) => {
     console.log("UserDB is offline");
