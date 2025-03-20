@@ -1,0 +1,18 @@
+@import './Login.css';
+
+/* Additional Styles for Signup */
+.title {
+  margin-bottom: 1rem;
+  color: var(--bg-dark);
+  font-weight: 700;
+}
+
+.input-span input[type="text"],
+.input-span input[type="email"],
+.input-span input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}

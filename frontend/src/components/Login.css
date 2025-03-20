@@ -1,0 +1,112 @@
+/* Variables */
+:root {
+    --bg-light: #f9f9f9;
+    --bg-dark: #333;
+    --clr-primary: #58bc82;
+    --clr-secondary: #9c9c9c60;
+    --clr-text: #444;
+    --font-family: 'Lato', sans-serif;
+  }
+
+body {
+  font-family: var(--font-family);
+}
+
+  /* Wrapper */
+  .styled-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--bg-light);
+  }
+  
+  /* Form Styles */
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 350px;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    background-color: white;
+  }
+  
+  /* Input Container */
+  .input-span {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-left: -2rem;
+  }
+  
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    border-radius: 0.5rem;
+    padding: 1rem;
+    width: 100%;
+    border: 1px solid var(--clr-secondary);
+    background-color: var(--clr-secondary);
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    border-color: var(--clr-primary);
+    background-color: #fff;
+  }
+  
+  /* Label */
+  .label {
+    color: var(--clr-primary);
+    font-weight: 600;
+  }
+  
+  /* Submit Button */
+  .submit {
+    padding: 0.8rem;
+    width: 100%;
+    border-radius: 25px;
+    background-color: var(--clr-primary);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+  }
+  
+  .submit:hover {
+    background-color: var(--bg-dark);
+  }
+  
+  /* Links */
+  .span {
+    color: var(--clr-text);
+    font-size: 0.9rem;
+  }
+  
+  .span a {
+    color: var(--clr-primary);
+    text-decoration: none;
+  }
+  
+  .span a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .form {
+      max-width: 90%;
+      padding: 1rem;
+    }
+  }
+  
